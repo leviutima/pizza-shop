@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { TableCell,TableRow } from "@/components/ui/table";
-import { ArrowRight, Search, X } from "lucide-react";
+import { ArrowRight, X } from "lucide-react";
 import { OrderDetails } from "./order-details";
 
 export function OrderTableRow() {
