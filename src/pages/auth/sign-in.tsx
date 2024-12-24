@@ -18,6 +18,7 @@ export function SignIn() {
     const  [ searchParams ] = useSearchParams();
     // useSearchParams é um hook do react-router-dom que retorna um array com o objeto URLSearchParams e uma função para atualizar a query string
 
+    
     const {
         register, 
         handleSubmit, 
@@ -35,6 +36,7 @@ export function SignIn() {
         
     })
     // já o get é uma Query
+
 
     async function handleSignIn(data: SignInForm) {
         try {
