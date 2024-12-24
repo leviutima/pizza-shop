@@ -5,18 +5,16 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { X } from "lucide-react";
 import {
   ResponsiveContainer,
   LineChart,
   Line,
   XAxis,
   YAxis,
-  CartesianGrid,
-  Tooltip,
+  CartesianGrid
 } from "recharts";
 
-import colors from "tailwindcss/colors"
+import colors from "tailwindcss/colors";
 
 const data = [
   {
@@ -77,7 +75,9 @@ export function ReviewChart() {
                 })
               }
             />
+            <CartesianGrid vertical={false} className="stroke-muted"/>
             <Line type="linear" strokeWidth={2} dataKey="revenue" stroke={colors.violet['500']}></Line>
+            
           </LineChart>
         </ResponsiveContainer>
       </CardContent>
